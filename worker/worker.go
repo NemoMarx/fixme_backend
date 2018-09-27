@@ -36,6 +36,7 @@ type (
 			Number     int
 			URL        string
 			CreatedAt  string
+			UpdatedAt  string
 			DatabaseID int
 			Labels     struct {
 				Nodes []struct {
