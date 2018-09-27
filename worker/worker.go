@@ -265,6 +265,7 @@ func (w *Worker) saveData(issueData issueQueryWithBefore, repository *models.Rep
 			RepositoryID: (*repository).ID,
 			ProjectID:    (*repository).ProjectID,
 			Language:     nulls.String{String: strings.ToLower(*language), Valid: *language != ""},
+                        GithubUpdatedAt: node.updatedAt, //Not sure if this is right but it matches the GraphQL documentation
 		}
 
 		labels := []string{}

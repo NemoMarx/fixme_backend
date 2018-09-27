@@ -91,7 +91,8 @@ CREATE TABLE public.projects (
     issues_count integer NOT NULL,
     tags character varying[] NOT NULL,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    github_updated_at timestamp without time zone
 );
 
 
